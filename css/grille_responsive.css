@@ -1,0 +1,177 @@
+/* feuille de style pour la grille */
+/* le selecteur universelle c'est (*) */
+*{
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif; 
+}
+
+/* le row=ligne et c'est ce qui me donnera les flex */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid orange;
+}
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    border: 2px solid green;
+}
+.col-1 {width: 8.333333%;} 
+.col-2 {width: 16.666666%;} 
+.col-3 {width: 25%;} 
+.col-4 {width: 33.333333%;} 
+.col-5 {width: 41.666666%;} 
+.col-6 {width: 50%;} 
+.col-7 {width: 58.333333%;} 
+.col-8 {width: 66.666666%;} 
+.col-9 {width: 75%;} 
+.col-10 {width: 83.333333%;} 
+.col-11 {width: 91.666666%;} 
+.col-12 {width: 100%;} 
+
+.marge-1 {margin-left: 8.333333%;}
+.marge-2 {margin-left: 16.666666%;} 
+.marge-3 {margin-left: 25%;} 
+.marge-4 {margin-left: 33.333333%;} 
+.marge-5 {margin-left: 41.666666%;} 
+.marge-6 {margin-left: 50%;} 
+.marge-7 {margin-left: 58.333333%;} 
+.marge-8 {margin-left: 66.666666%;} 
+.marge-9 {margin-left: 75%;} 
+.marge-10 {margin-left: 83.333333%;} 
+.marge-11 {margin-left: 91.666666%;} 
+/* la marge 12 envois l'élément à la ligne */
+
+
+/* media queries, pour les écrans */
+
+/* téléphone mobile exemple iphone5 */
+
+@media (max-width: 320px) {
+    body {
+        background: #fff;
+    }
+    
+    .conteneur {
+        width: 100%;
+        background: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+    }
+    h1 {
+        font-size: 120%;
+        text-align: center;
+        padding-left: 5px;
+        color: white;
+    }
+
+    header p {
+        /* color: white; */
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .row {
+        border: none;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
+    }
+
+    .col-xsm-12 {
+        width: 100%;
+    }
+    .marge-xsm {
+        margin-left: 0;
+    }
+
+}
+/* petite tablettes */
+
+@media (min-width: 321px) and (max-width: 767px) {
+
+    body {
+        background: #b18b45;
+    }
+
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        background: #fff;
+
+
+    }
+
+    .row {
+        border: none;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+/* tablette et ordinateur portable, desktop*/
+
+@media (min-width: 768px) and (max-width: 1096px) {
+
+    body {
+        background: #2e20e7;
+    }
+
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fff;
+    }
+}
+
+/* écran ordinateurs de bureau */
+@media (min-width: 1097px){
+
+    .body {
+        background: lightgrey;
+    }
+    .conteneur {
+        background: lightslategray;
+        width: 1200px;
+        border: 1px solid white;
+        margin: 0 auto;
+    }
+}
+
+
+/* couleurs génériques */
+.bleu {background: blue; 
+    min-height: 60px;
+    color: white;
+    padding: 5px;
+}
+.rouge {
+    background: orangered; 
+    min-height: 60px;
+}
+.vert {
+    background: green; 
+    min-height: 60px;
+}
+.jaune {
+    background: yellow; 
+    min-height: 60px;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+}
