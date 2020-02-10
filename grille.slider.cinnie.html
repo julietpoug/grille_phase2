@@ -72,20 +72,18 @@
 
     <!-- mon js pour le diaporama -->
     <script>
-        var img = 0;
+        var diapo = 0;
+        var diapo = new Array("img/dolomite1.jpg", "img/dolomite2.jpg", "img/dolomite3.jpg", "img/dolomite4.jpg")
         function  f() {
-            img +=1;
-            monImage.setAttribute("src","img/dolomite"+img+".jpg");  
-            if(img==4){
+            diapo +=1;
+            monImage.setAttribute("src","img/"+ diapo +".jpg");  
+            if(diapo==4){
                 //clearInterval permet de stopper un setInterval
-                // clearInterval(timer); permet de stopper la boucle
-                img = 0;
-
+                clearInterval(timer)
             }         
         }
         //setInterval permet de lancer une fonction tous les X millième desecondes
-        // var timer=window.setInterval('f()',1000);
-        window.setInterval('f()',1000);
+        var timer=window.setInterval('f()',1000);
      
     </script>  
 </body>
